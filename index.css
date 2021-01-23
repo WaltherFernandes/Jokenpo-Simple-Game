@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    cursor: default;
+}
+
+body{
+    background-color: #babaca80;
+}
+
+#container{
+}
+
+#title{
+    text-align: center;
+}
+
+#score{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+}
+
+#message{
+    margin: 20px 0;
+    background-color: #babaca;
+    border-radius: 3px;
+    padding: 20px;
+    
+    text-align: center;
+
+    font-size: 24px;
+}
+
+
+
+#player{
+    background-color: #ff7675;
+}
+#player #player-choice{
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+}
+#player #player-choice li{
+    display: inline;
+    padding: 0 15px;
+}
+#player #player-choice a{
+    opacity: 0.2;
+}
+#player #player-choice a:hover{
+    opacity: 1;
+}
+#player #player-choice img{
+    max-width: 80px;
+}
+#player #player-points{
+    right: 20px;
+}
+
+
+
+
+#vs{
+    color: black;
+    font-size: 80px;
+    padding: 0 40px;
+}
+
+
+
+#computer{
+    background-color: #3498db;
+}
+#computer #computer-choice{
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+}
+#computer #computer-choice li{
+    display: inline;
+    padding: 0 15px;
+}
+#computer #computer-choice a{
+    opacity: 0.2;
+}
+#computer #computer-choice img{
+    max-width: 80px;
+}
+#computer #computer-points{
+    right: 20px;
+}
+
+#player, #computer{
+    position: relative;
+
+    flex-grow: 1;
+    border-radius: 5px;
+
+    color: #FFF;
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+#player h2, #computer h2{
+    margin: 0;
+    padding: 0;
+}
+#player-points, #computer-points{
+    position: absolute;
+    top: 8px;
+
+    font-size: 52px;
+}
+#player-name, #computer-name{
+    font-size: 24px;
+}
