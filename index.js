@@ -78,12 +78,12 @@ function play(choice){
 
     chooseWinner(passWinner);
 
-    document.getElementById(`player-choice-${playerChoice+1}`).style.opacity = 1;
-    document.getElementById(`computer-choice-${computerChoice+1}`).style.opacity = 1;
+    document.getElementById(`player-choice-${playerChoice+1}`).classList.add('selected');
+    document.getElementById(`computer-choice-${computerChoice+1}`).classList.add('selected');
     setTimeout(()=>{
-        document.getElementById(`player-choice-${playerChoice+1}`).style.opacity = 0.2;
-        document.getElementById(`computer-choice-${computerChoice+1}`).style.opacity = 0.2;
-    }, 1000);
+        document.getElementById(`player-choice-${playerChoice+1}`).classList.remove('selected');
+        document.getElementById(`computer-choice-${computerChoice+1}`).classList.remove('selected');
+    }, 1500);
     // Add points
 
     // Show the user option

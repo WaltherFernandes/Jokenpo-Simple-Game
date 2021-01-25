@@ -56,7 +56,7 @@ body{
 #player #player-choice a{
     opacity: 0.2;
 }
-#player #player-choice a:hover{
+#player #player-choice a:hover, #player #player-choice a.selected{
     opacity: 1;
 }
 #player #player-choice img{
